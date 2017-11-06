@@ -87,6 +87,7 @@
         
         
     <script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/typeit.js"></script>
 <script src="/assets/js/modernizr.js"></script>
 <script src="/assets/js/webcomponents-lite.js"></script>
 <script src="/assets/js/foundation.js"></script>
@@ -116,6 +117,12 @@ function initialScroll(hScroll, vScroll) {
 function focusOnElement(element_id) {
      $(element_id).goTo(); // need to 'go to' this element
 }
+</script>
+
+<script>
+  $('#intro-text').typeIt({
+    //strings: ['Enter your string here!', 'Another string!']
+  });
 </script>
 
 <script src="/assets/js/angular.js"></script>

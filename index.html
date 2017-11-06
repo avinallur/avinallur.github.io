@@ -57,7 +57,7 @@
     
     <md-content flex flex-md="70" flex-lg="70" md-padding layout="column" layout-align="start center">
         <center>
-            <h2 class="subheader"> Hi, I'm Avi. </h2>
+            <h2 id = "intro-text" class="subheader"> Hi, I'm Avi. </h2>
             <h3 class="subheader"> Analyst. Engineer. Designer. Photographer...<br>
             <strong> Human. </strong></h3>
             <md-content layout="row" layout-align="center center"> 
@@ -150,6 +150,7 @@
         
         
     <script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/typeit.js"></script>
 <script src="/assets/js/modernizr.js"></script>
 <script src="/assets/js/webcomponents-lite.js"></script>
 <script src="/assets/js/foundation.js"></script>
@@ -179,6 +180,12 @@ function initialScroll(hScroll, vScroll) {
 function focusOnElement(element_id) {
      $(element_id).goTo(); // need to 'go to' this element
 }
+</script>
+
+<script>
+  $('#intro-text').typeIt({
+    //strings: ['Enter your string here!', 'Another string!']
+  });
 </script>
 
 <script src="/assets/js/angular.js"></script>
