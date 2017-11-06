@@ -1,0 +1,24 @@
+<md-content>
+    <img src="/assets/img/camera.svg" class="heroBackgroundImageClass">
+</md-content>
+
+<md-content class="transparentPanel" style="height: 150px">                
+</md-content>
+
+<md-content flex layout="column">
+    
+<md-content flex layout="column" layout-align="begin begin">
+<h1 class="websiteContent" style="text-align: left;"> {{photoset.title | stripFlickrCustomText }} </h1>
+</md-content>
+
+<md-content flex flex-fill>
+    <div style="margin: 0 auto;" masonry="{ transitionDuration: '1s', isFitWidth: 'true'}">
+        <div class="masonry-brick" ng-repeat="photo in photoset.photo">
+            <img class="pictureThumbnail" ng-src={{photo.url_l}} alt="banner image">
+            <!-- ng-mouseenter="displayCaption = 'True'" ng-mouseleave="displayCaption = 'False'" ng-init="displayCaption = 'False'" -->
+            <!-- md-colspan-gt-sm="{{photo.colspan}}" md-rowspan-gt-sm="{{photo.rowspan}}" -->
+        </div>
+    </div>
+</md-content>    
+
+</md-content>

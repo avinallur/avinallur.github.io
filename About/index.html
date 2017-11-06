@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en-ca" ng-app="webApp">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+    <meta name="description" content="Avinash Nagarajan | About me">
+    <meta name="author" content="Avinash Nagarajan">
+
+    <link href="/assets/css/angular-material.css" rel="stylesheet" type='text/css'>
+<link href="/assets/css/foundation.css" rel="stylesheet" type='text/css'>
+<link href="/assets/css/stylesheet.css" rel="stylesheet" type='text/css'>
+<link href="/assets/fonts/foundation-icons.min.css" rel="stylesheet" type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+<link href='/assets/css/pre-loader-animations.css' rel='stylesheet' type='text/css'>
+<link href='/assets/css/bootstrap-reboot.css' rel='stylesheet' type='text/css'>
+    <link href="/assets/css/timeline.css" rel="stylesheet" type='text/css'>
+
+    <title>Avinash Nagarajan</title>
+
+    <page-title> "Avinash Nagarajan | About.Me" </page-title>
+
+    <md-content ng-class="scrollPosition <= 100 ? 'mainHeaderRow' : 'md-whiteframe-z2 mainHeaderRowScroll'" id="mainHeader" layout-align="center center">
+          <section class="md-padding" layout="row" layout-fill layout-align="space-around center">
+            <img src=/assets/img/AN-Logo-1.svg style="height: 60px;">
+            <section hide-xs flex-margin flex-padding flex layout="row" layout-align="end center">
+                <md-button class="md-flat" ng-href="/" flex-padding> Home </md-button>
+                <md-button hide class="md-flat" ng-href="/Pictures/"> Pictures </md-button> 
+                <md-button class="md-flat activeButton" ng-href="/About/"> About.Me </md-button> 
+            </section>
+            <section hide-gt-xs flex layout="row" layout-align="end center">
+                <md-button class="md-icon-button md-primary md-flat" ng-href="/"> <i class="fi-home" style="height: 100%;"></i> </md-button>
+                <md-button hide class="md-icon-button md-flat" ng-href="/Pictures/"> <i class="fi-camera"></i> </md-button> 
+                <md-button class="md-icon-button md-flat" ng-href="/About/"> <i class="fi-torso"></i> </md-button> 
+            </section>
+          </section>  
+
+        <span class="headerBanner" hide-xs hide-sm> about.Me </span>
+
+    </md-content>
+
+
+	</head>
+    
+	<body ng-controller="AppCtrl" font-family: "Roboto, 'Helvetica', Helvetica, sans-serif" resize duScrollContainer>
+        
+        <header>
+            
+        </header>
+        
+        
+<md-content>
+    <img src="/assets/img/Selfie.jpg" class="heroBackgroundImageClass">
+</md-content>
+
+            <md-content class="transparentPanel" style="height:  {{windowHeight-100+'px;'}} ">
+                
+            </md-content>
+        <md-content style="min-height:  {{windowHeight-100+'px;'}}  width: 100%; padding-left: 10%; padding-right: 10%;">
+            
+            
+
+<md-content layout-padding layout-margin flex layout="column" layout-align="center center">
+
+    <md-content flex layout-fill id="Profile">
+        <h1 class="aboutSectionDividerBanner">Profile</h1>
+        <h4 class="subheader aboutSectionDividerBanner">A little more about me, the person</h4>
+        <md-divider></md-divider>
+    </md-content>
+    
+    <md-content md-padding layout-padding layout-margin flex layout="row" layout-sm="column" layout-align="center center">
+        <md-content flex="100" flex-gt-sm="40" style="padding:20px;">
+            <img id="profileImageContainer" class="aboutProfileImage" src="/assets/img/profile_5.jpg">
+            <div id="preloader" class="sk-cube-grid">
+                <div class="sk-cube sk-cube1"></div>
+                <div class="sk-cube sk-cube2"></div>
+                <div class="sk-cube sk-cube3"></div>
+                <div class="sk-cube sk-cube4"></div>
+                <div class="sk-cube sk-cube5"></div>
+                <div class="sk-cube sk-cube6"></div>
+                <div class="sk-cube sk-cube7"></div>
+                <div class="sk-cube sk-cube8"></div>
+                <div class="sk-cube sk-cube9"></div>
+            </div>
+        </md-content>
+        <md-content flex="100" flex-gt-sm="55" layout="column" layout-align="center begin" class="websiteContent">
+            <h4> Avinash Nagarajan, 28 </h4>
+            <h5 class="subheader"> Toronto, Canada </h5>
+            <p> I am an analyst by profession. I love to travel and am passionate (albeit still a learner) about photography. I have also dabbled in design, application development and programming. In the near future, I would like to learn a new language! </p>
+        </md-content>
+    </md-content>
+    
+</md-content> 
+ 
+
+            
+<md-content when-not-visible="animateOut" when-visible="animateIn" class="animateIn" md-padding layout-padding flex layout="column" layout-align="begin center">
+
+    <md-content class="transparentPanel" id="Experience">
+        <h1 class="aboutSectionDividerBanner">Experience</h1>
+        <h4 class="subheader aboutSectionDividerBanner">Wherever you go, go with all your heart. <br>- Confucius </h4>
+        <md-divider></md-divider>
+    </md-content>
+
+    <md-content class="transparentPanel" layout-padding flex>
+        <md-content flex layout-padding layout="row">
+            <md-content layout-padding flex="40" flex-md="30" flex-sm="20">
+                <h5 hide-sm class="websiteContent" style="text-align: right;"> 2016 - Today </h5>
+                <h5 hide-gt-sm class="websiteContent" style="text-align: right;"> '16-> </h5>
+            </md-content>
+            <md-content layout-padding flex="60" flex-md="70" flex-sm="80">
+                <h5 class="websiteContent"> Capital One, Toronto, Canada <span class="subheader"> (A Fortune 500 financial services firm) </span> </h5>
+                <h5 class="subheader websiteContent"> Business Manager </h5>
+            </md-content>            
+        </md-content>
+
+        <md-content flex layout-padding layout="row">
+            <md-content layout-padding flex="40" flex-md="30" flex-sm="20">
+                <h5 hide-sm class="websiteContent" style="text-align: right;"> 2013 - 2016 </h5>
+                <h5 hide-gt-sm class="websiteContent" style="text-align: right;"> '13-'16 </h5>
+            </md-content>
+            <md-content layout-padding flex="60" flex-md="70" flex-sm="80">
+                <h5 class="websiteContent"> Capital One, Toronto, Canada <span class="subheader"> (A Fortune 500 financial services firm) </span> </h5>
+                <h5 class="subheader websiteContent"> Senior Business Analyst </h5>
+            </md-content>            
+        </md-content>
+        
+        <md-content flex layout-padding layout="row">
+            <md-content layout-padding flex="40" flex-md="30" flex-sm="20">
+                <h5 hide-sm class="websiteContent" style="text-align: right;"> 2011 - 2013 </h5>
+                <h5 hide-gt-sm class="websiteContent" style="text-align: right;"> '11-'13 </h5>
+            </md-content>
+            <md-content layout-padding flex="60" flex-md="70" flex-sm="80">
+                <h5 class="websiteContent"> Capital One, Bangalore, India <span class="subheader"> (A Fortune 500 financial services firm) </span> </h5>
+                <h5 class="subheader websiteContent"> Business Analyst </h5>
+            </md-content>            
+        </md-content>
+        
+        <md-content flex layout-padding layout="row">
+            <md-content layout-padding flex="40" flex-md="30" flex-sm="20">
+                <h5 hide-sm class="websiteContent" style="text-align: right;"> 2008 </h5>
+                <h5 hide-gt-sm class="websiteContent" style="text-align: right;"> '08 </h5>
+            </md-content>
+            <md-content layout-padding flex="60" flex-md="70" flex-sm="80">
+                <h5 class="websiteContent"> Redpine Signals Inc, Hyderabad, India <span class="subheader"> (A wireless systems company) </span> </h5>
+                <h5 class="subheader websiteContent"> Intern </h5>
+            </md-content>            
+        </md-content>
+        
+    </md-content> 
+
+</md-content> 
+
+
+            
+
+<md-content when-visible="animateIn" when-not-visible="animateOut" class="hidden" md-padding layout-padding flex layout="column" layout-align="begin center">
+
+    <md-content class="transparentPanel" id="Education">
+        <h1 class="aboutSectionDividerBanner">Education</h1>
+        <h4 class="subheader aboutSectionDividerBanner">The important thing is not to stop questioning. <br>- Albert Einstein </h4>
+        <md-divider></md-divider>
+    </md-content>
+    
+    <md-content md-padding layout-padding flex layout="column" layout-align="space-around space-around">
+        <md-content flex layout-padding layout="row">
+            <md-content layout-padding flex="40" flex-md="30" flex-sm="20">
+                <h5 hide-sm class="websiteContent" style="text-align: right;"> 2009 - 2011 </h5>
+                <h5 hide-gt-sm class="websiteContent" style="text-align: right;"> '09-'11 </h5>
+            </md-content>
+            <md-content layout-padding flex="60" flex-md="70" flex-sm="80">
+                <h5 class="websiteContent"> Indian Institute of Technology Madras, Chennai, India </h5>
+                <h5 class="subheader websiteContent"> Master of Technology, Wireless Communications </h5>
+                
+            </md-content>            
+        </md-content>
+        
+        <md-content flex layout-padding layout="row">
+            <md-content layout-padding flex="40" flex-md="30" flex-sm="20">
+                <h5 hide-sm class="websiteContent" style="text-align: right;"> 2009 </h5>
+                <h5 hide-gt-sm class="websiteContent" style="text-align: right;"> '09 </h5>
+            </md-content>
+            <md-content layout-padding flex="60" flex-md="70" flex-sm="80">
+                <h5 class="websiteContent"> London School of Economics, London, UK </h5>
+                <h5 class="subheader websiteContent"> Judgement and Decision Making for Management (Course) </h5>
+                
+            </md-content>            
+        </md-content>
+        
+        <md-content flex layout-padding layout="row">
+            <md-content layout-padding flex="40" flex-md="30" flex-sm="20">
+                <h5 hide-sm class="websiteContent" style="text-align: right;"> 2006 - 2009 </h5>
+                <h5 hide-gt-sm class="websiteContent" style="text-align: right;"> '06-'09 </h5>
+            </md-content>
+            <md-content layout-padding flex="60" flex-md="70" flex-sm="80">
+                <h5 class="websiteContent"> Indian Institute of Technology Madras, Chennai, India </h5>
+                <h5 class="subheader websiteContent"> Bachelor of Technology, Electrical Engineering <p> Minor in Operations Research </h5>
+                
+            </md-content>            
+        </md-content>
+        
+    </md-content>
+    
+</md-content> 
+
+
+            
+
+<md-content when-visible="animateIn" when-not-visible="animateOut" class="hidden" hide md-padding layout-padding flex layout="column" layout-align="begin center">
+
+    <md-content class="transparentPanel" id="Abilities">
+        <h1 class="aboutSectionDividerBanner">Abilities</h1>
+        <h4 class="subheader aboutSectionDividerBanner">The important thing is not to stop questioning. <br>- Albert Einstein </h4>
+        <md-divider></md-divider>
+    </md-content>
+
+    <md-content class="transparentPanel" md-padding layout-padding layout-margin flex>
+        <p style="height: 500px;"></p>
+    </md-content>
+
+</md-content> 
+
+
+            
+
+<md-content when-visible="animateIn" when-not-visible="animateOut" class="hidden" md-padding layout-padding flex layout="column" layout-align="begin center">
+
+    <md-content class="transparentPanel" id="Contact">
+        <h1 class="aboutSectionDividerBanner">Get in touch!</h1>
+        <h4 class="subheader aboutSectionDividerBanner">Each contact with a human being is so rare, so precious, one should preserve it. <br>- Anaïs Nin </h4>
+        <md-divider></md-divider>
+    </md-content>
+
+    <md-content class="transparentPanel" md-padding layout-padding layout-margin flex layout="row" layout-sm="column">
+        <md-content layout-padding layout-margin flex="100" flex-sm="100" layout="column">
+            <p class="websiteContent">
+            Everyone has a story - one that is often worth telling. If you want to share yours or if you find something here that interests you and you would like to get to know more, do get in touch!
+            </p>
+            <p class="websiteContent">
+                Find me on the internet... 
+                <md-button style="height: 12px;" class="md-icon-button" ng-href="https://www.facebook.com/avinash.nagarajan.9">
+                    <md-icon md-svg-src="/assets/icons/icon-facebook.svg"></md-icon>
+                    <md-tooltip md-direction="top"> Facebook </md-tooltip>
+                </md-button>,
+                <md-button hide ng-disabled="true" style="height: 12px;" class="md-icon-button" ng-href="#">
+                    <md-icon md-svg-src="/assets/icons/icon-email.svg"></md-icon>
+                    <md-tooltip md-direction="top"> Email </md-tooltip>
+                </md-button> or
+                <md-button style="height: 12px;" class="md-icon-button" ng-href="https://ca.linkedin.com/pub/avinash-nagarajan/28/802/856">
+                    <md-icon md-svg-src="/assets/icons/icon-linkedin.svg"></md-icon>
+                    <md-tooltip md-direction="top"> Linkedin </md-tooltip>
+                </md-button>
+                Or, keep it old-school and find me at 
+                <md-button style="height: 12px;" class="md-icon-button">
+                    <a data-open="locationModal">
+                    <md-icon md-svg-src="/assets/icons/icon-location.svg"></md-icon>
+                    <md-tooltip md-direction="top"> Toronto, Canada </md-tooltip>
+                    </a>
+                </md-button>
+            </p>
+            <p class="websiteContent">
+            P.S: <a href="http://www.fiftycoffees.com/the-project/">Coffees are always in season, I find.</a>
+            </p>
+        </md-content>
+    </md-content>
+
+</md-content> 
+            <div id="locationModal" class="reveal" data-reveal>
+                    <md-content flex layout="row" layout-sm="column" layout-align="space-around center">
+                        <md-content flex="40" flex-sm="100"> 
+                            <h5 class="websiteContent">Toronto, ON, Canada</h5>
+                            <h6 class="websiteContent subheader">A beautiful city!</h6>
+                        </md-content>
+                    
+                        <md-content flex="60" flex-sm="100">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184552.30943582457!2d-79.37805800000001!3d43.7182412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C+ON!5e0!3m2!1sen!2sca!4v1442094720171" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </md-content>
+                    </md-content>
+                    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+            </div>
+
+            
+            
+            
+<md-content hide-xs hide-sm ng-show="scrollPosition >= 800" class="sidebarFixed" flex layout="column" layout-align="space-around center">
+    <md-button class="md-flat" href="#Profile" du-smooth-scroll du-scrollspy flex layout-fill> Profile </md-button>
+    <md-button class="md-flat" href="#Experience" du-smooth-scroll du-scrollspy flex layout-fill> Experience </md-button>
+    <md-button class="md-flat" href="#Education" du-smooth-scroll du-scrollspy flex layout-fill> Education </md-button>
+    <md-button hide class="md-flat" href="#Abilities" du-smooth-scroll du-scrollspy flex layout-fill> Abilities </md-button>
+    <md-button class="md-flat" href="#Contact" du-smooth-scroll du-scrollspy flex layout-fill> Contact </md-button>
+</md-content>
+
+        </md-content>
+        
+        <footer>
+            
+    <md-content class="md-whiteframe-z1 footer" flex layout="row" layout-align = "space-around center">
+    <span class="footerText" align="center"> <Strong>Stay hungry. Stay foolish. <br></Strong>
+(c) Avinash Nagarajan, All Rights Reserved.
+<br> I use this domain to learn new technologies and test out different components and structures.... A thought crossed your mind? I would love to know!
+<br> Designed using elements from the <a href="http://foundation.zurb.com/">foundation framework</a>, <a href="https://angularjs.org/">AngularJS</a> and <a href="https://material.angularjs.org/">AngularMaterial</a>.
+</span>
+</md-content>
+
+        </footer>    
+        
+        
+    <script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/modernizr.js"></script>
+<script src="/assets/js/webcomponents-lite.js"></script>
+<script src="/assets/js/foundation.js"></script>
+
+<script>
+$(document).foundation();
+</script>
+
+<!-- Adding script to change menu size automatically -->
+<!--
+<script type="text/javascript">
+    $(window).on("scroll", function(){
+        if($(document).scrollTop()>100){
+            $("#mainHeader").removeClass("mainHeaderRowLarge").addClass("mainHeaderRowRegular");
+        } else{
+            $("#mainHeader").removeClass("mainHeaderRowRegular").addClass("mainHeaderRowLarge");
+        }
+    });
+</script>
+-->
+
+<script>
+function initialScroll(hScroll, vScroll) {
+    window.scrollTo(hScroll, vScroll);
+}
+    
+function focusOnElement(element_id) {
+     $(element_id).goTo(); // need to 'go to' this element
+}
+</script>
+
+<script src="/assets/js/angular.js"></script>
+<script src="/assets/js/angular-aria.js"></script>
+<script src="/assets/js/angular-animate.js"></script>
+<script src="/assets/js/angular-material.js"></script>
+<script src="/assets/js/angular-scroll.js"></script>
+<script src="/assets/js/angular-route.js"></script>
+<script src="/assets/js/angular-scroll-animate.js"></script>
+
+<script src="/assets/js/masonry.pkgd.js"></script>
+<script src="/assets/js/imagesloaded.js"></script>
+<script src="/assets/js/jquery.bridget.js"></script>
+<script src="/assets/js/angular-masonry.js"></script>
+<script src="/assets/js/Modules.js"></script>
+<script src="/assets/js/bodymovin.js"></script>
+<script src="/assets/js/react.development.js"></script>
+<script src="/assets/js/react-dom.development.js"></script>
+<script src="/assets/js/imagesloaded.js"></script>
+
+<!-- <script src="/assets/js/bodymotion-animations.js"></script> -->
+<!--
+    <script>
+        $(window).on('scroll', function(){
+	       $timeline_block.each(function(){
+		if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
+			$(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+		}
+	});
+});
+    </script>
+-->
+
+<script>
+$('#profileImageContainer').imagesLoaded()
+  .done( function( instance ) {
+    $('#preloader').addClass('fade-out');
+  })
+
+</script>
+
+        
+        <script>
+        angular.element(document).ready(function () {
+        $('html, body').animate({scrollTop: $("#Profile").offset().top-125}, 1000);
+        });
+        </script>
+        
+	</body>
+    
+</html>

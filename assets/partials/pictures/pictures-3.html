@@ -1,0 +1,24 @@
+<md-content>
+    <img src="/assets/img/camera.svg" class="heroBackgroundImageClass">
+</md-content>
+
+<md-content class="transparentPanel" style="height: 150px">                
+</md-content>
+
+<md-content flex layout="column">
+    
+<md-content flex layout="column" layout-align="begin begin">
+<h1 class="websiteContent" style="text-align: left;"> Pictures - 2 | {{photoset.title | stripFlickrCustomText }} </h1>
+</md-content>
+
+<md-content layout-padding>
+    <md-grid-list md-cols-gt-md="12" md-cols-sm="1" md-cols-md="8" md-row-height="1:1" md-gutter-gt-md="16px" md-gutter-gt-sm="8px" md-gutter="4px">
+        <md-grid-tile class="pictureThumbnailContainer" ng-repeat="photo in photoset.photo" md-colspan-gt-sm="4" md-rowspan-gt-sm="4">
+            <img class="pictureThumbnail" ng-src={{photo.url_l}} alt="banner image">
+            <!-- ng-mouseenter="displayCaption = 'True'" ng-mouseleave="displayCaption = 'False'" ng-init="displayCaption = 'False'" -->
+            <!-- md-colspan-gt-sm="{{photo.colspan}}" md-rowspan-gt-sm="{{photo.rowspan}}" -->
+        </md-grid-tile>
+    </md-grid-list>
+</md-content>    
+
+</md-content>

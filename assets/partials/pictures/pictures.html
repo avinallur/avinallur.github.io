@@ -1,0 +1,24 @@
+<md-content>
+    <img src="/assets/img/camera.svg" class="heroBackgroundImageClass">
+</md-content>
+
+<md-content class="transparentPanel" style="height: 150px">                
+</md-content>
+
+<md-content flex layout="column">
+    
+<md-content flex layout="column" layout-align="begin begin">
+<h1 class="websiteContent" style="text-align: left;"> {{photoset.title | stripFlickrCustomText }} </h1>
+</md-content>
+
+<md-content flex layout="row" layout-align="space-around center" layout-wrap layout-margin layout-padding>
+    <md-whiteframe class="{{whiteframeClass}} albumThumbnailContainer" ng-repeat="photo in photoset.photo" ng-mouseenter="whiteframeClass = 'md-whiteframe-z4'; displayCaption = 'True'" ng-mouseleave="whiteframeClass = 'md-whiteframe-z1'; displayCaption = 'False'" ng-init="whiteframeClass = 'md-whiteframe-z1'" layout-align="center center">
+            <img class="albumThumbnail" ng-src={{photo.url_l}} flex-fill alt="banner image">
+        <span class="websiteContent">
+        <h4 class="websiteContent">{{photo.title}}</h4>
+        <h6 class="subheader websiteContent">{{photo.date_taken}}</h6>
+        </span>
+    </md-whiteframe>
+</md-content>
+
+</md-content>

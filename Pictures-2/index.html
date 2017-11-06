@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en-ca" data-ng-app="webApp">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Avinash Nagarajan's Pictures">
+        <meta name="author" content="Avinash Nagarajan">
+		<title>Avinash Nagarajan</title>
+        
+        
+    <meta name="description" content="Avinash Nagarajan | Pictures">
+    <meta name="author" content="Avinash Nagarajan">
+
+    <link href="/assets/css/angular-material.css" rel="stylesheet" type='text/css'>
+<link href="/assets/css/foundation.css" rel="stylesheet" type='text/css'>
+<link href="/assets/css/stylesheet.css" rel="stylesheet" type='text/css'>
+<link href="/assets/fonts/foundation-icons.min.css" rel="stylesheet" type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+<link href='/assets/css/pre-loader-animations.css' rel='stylesheet' type='text/css'>
+<link href='/assets/css/bootstrap-reboot.css' rel='stylesheet' type='text/css'>
+
+    <page-title> "Avinash Nagarajan | Pictures" </page-title>
+    <md-content ng-class="scrollPosition <= 500 ? 'mainHeaderRow' : 'md-whiteframe-z2 mainHeaderRowScroll'" id="mainHeader" layout-align="center center">
+          <section class="md-padding" layout="row" layout-fill layout-align="space-around center">
+                  <img src=/assets/img/AN-logo-4.svg style="height: 60px;">
+                  <section hide-sm flex-margin flex-padding flex layout="row" layout-align="end center">
+              <md-button class="md-flat" ng-href="/" hide-sm flex-padding> Home </md-button>
+              <md-button hide class="md-flat activeButton" ng-href="/Pictures/" hide-sm> Pictures </md-button> 
+              <md-button class="md-flat" ng-href="/About/" hide-sm> About.Me </md-button> 
+                  </section>
+                  <section hide-gt-sm flex layout="row" layout-align="end center">
+              <md-button class="md-icon-button md-flat" ng-href="/" hide-gt-sm> <i class="fi-home" style="height: 100%;"></i> </md-button>
+              <md-button hide class="md-icon-button md-primary md-flat" ng-href="/Pictures/" hide-gt-sm> <i class="fi-camera"></i> </md-button> 
+              <md-button class="md-icon-button md-flat" ng-href="/About/" hide-gt-sm> <i class="fi-torso"></i> </md-button> 
+                  </section>
+          </section>  
+              
+    <span class="headerBanner" hide-sm> Pictures </span>
+    </md-content> 
+
+ 
+	</head>
+    
+	<body data-ng-controller="AppCtrl" resize>
+        
+        <header>
+            
+        </header>
+        
+        <md-content>
+             
+        </md-content>
+       
+        <md-content class="md-padding" style="min-height:  {{windowHeight-100+'px;'}} " flex>
+            
+<md-content style="background-color: rgba(0,0,0,0); height: 80%;">
+</md-content>
+
+            
+<md-content data-ng-controller="PhotoCtrl as photocontroller" flex layout="row" layout-align="space-around center" layout-wrap layout-margin layout-padding>
+    <md-whiteframe class= "{{whiteframeClass}} albumThumbnailContainer"  ng-repeat="photoset in albums.photosets.photoset | filter:'AvinashNagarajan.com_Albums~'" ng-mouseenter="whiteframeClass = 'md-whiteframe-z4'; displayCaption = 'True'" ng-mouseleave="whiteframeClass = 'md-whiteframe-z1'; displayCaption = 'False'" ng-init="whiteframeClass = 'md-whiteframe-z1'" ng-click="photocontroller.setCurrentPhotoset(photoset.id)" layout-align="center center">
+            <img class="albumThumbnail" ng-src= {{photoset.primary_photo_extras.url_c}}  flex-fill alt="banner image">
+        <span class="websiteContent">
+        <h4 class="websiteContent"> {{photoset.title._content | stripFlickrCustomText}} </h4>
+        <h6 class="subheader websiteContent"> {{photoset.description._content}} </h6>
+        </span>
+    </md-whiteframe>
+</md-content>
+
+            
+            
+            
+            
+        </md-content>
+        
+        <footer>
+            
+    <md-content class="md-whiteframe-z1 footer" flex layout="row" layout-align = "space-around center">
+    <span class="footerText" align="center"> <Strong>Stay hungry. Stay foolish. <br></Strong>
+(c) Avinash Nagarajan, All Rights Reserved.
+<br> I use this domain to learn new technologies and test out different components and structures.... A thought crossed your mind? I would love to know!
+<br> Designed using elements from the <a href="http://foundation.zurb.com/">foundation framework</a>, <a href="https://angularjs.org/">AngularJS</a> and <a href="https://material.angularjs.org/">AngularMaterial</a>.
+</span>
+</md-content>
+
+        </footer>    
+        
+        
+    <script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/modernizr.js"></script>
+<script src="/assets/js/webcomponents-lite.js"></script>
+<script src="/assets/js/foundation.js"></script>
+
+<script>
+$(document).foundation();
+</script>
+
+<!-- Adding script to change menu size automatically -->
+<!--
+<script type="text/javascript">
+    $(window).on("scroll", function(){
+        if($(document).scrollTop()>100){
+            $("#mainHeader").removeClass("mainHeaderRowLarge").addClass("mainHeaderRowRegular");
+        } else{
+            $("#mainHeader").removeClass("mainHeaderRowRegular").addClass("mainHeaderRowLarge");
+        }
+    });
+</script>
+-->
+
+<script>
+function initialScroll(hScroll, vScroll) {
+    window.scrollTo(hScroll, vScroll);
+}
+    
+function focusOnElement(element_id) {
+     $(element_id).goTo(); // need to 'go to' this element
+}
+</script>
+
+<script src="/assets/js/angular.js"></script>
+<script src="/assets/js/angular-aria.js"></script>
+<script src="/assets/js/angular-animate.js"></script>
+<script src="/assets/js/angular-material.js"></script>
+<script src="/assets/js/angular-scroll.js"></script>
+<script src="/assets/js/angular-route.js"></script>
+<script src="/assets/js/angular-scroll-animate.js"></script>
+
+<script src="/assets/js/masonry.pkgd.js"></script>
+<script src="/assets/js/imagesloaded.js"></script>
+<script src="/assets/js/jquery.bridget.js"></script>
+<script src="/assets/js/angular-masonry.js"></script>
+<script src="/assets/js/Modules.js"></script>
+<script src="/assets/js/bodymovin.js"></script>
+<script src="/assets/js/react.development.js"></script>
+<script src="/assets/js/react-dom.development.js"></script>
+<script src="/assets/js/imagesloaded.js"></script>
+
+<!-- <script src="/assets/js/bodymotion-animations.js"></script> -->
+    <script src="/assets/js/photoModules.js"></script>
+
+
+	</body>
+    
+</html>

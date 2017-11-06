@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en-ca" data-ng-app="webApp">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Avinash Nagarajan's personal website">
+        <meta name="author" content="Avinash Nagarajan">
+		<title>Avinash Nagarajan</title>
+        
+        
+    <link href="/assets/css/angular-material.css" rel="stylesheet" type='text/css'>
+<link href="/assets/css/foundation.css" rel="stylesheet" type='text/css'>
+<link href="/assets/css/stylesheet.css" rel="stylesheet" type='text/css'>
+<link href="/assets/fonts/foundation-icons.min.css" rel="stylesheet" type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+<link href='/assets/css/pre-loader-animations.css' rel='stylesheet' type='text/css'>
+<link href='/assets/css/bootstrap-reboot.css' rel='stylesheet' type='text/css'>
+ 
+	</head>
+    
+	<body data-ng-controller="AppCtrl" resize>
+        
+        <header>
+            
+    <page-title> "Avinash Nagarajan | My home on the internet" </page-title>
+    <md-content ng-class="scrollPosition <= 100 ? 'mainHeaderRow' : 'md-whiteframe-z2 mainHeaderRowScroll'" id="mainHeader" layout-align="center center">
+          <section class="md-padding" layout="row" layout-fill layout-align="begin center">
+            <img src=/assets/img/AN-Logo-6.svg style="height: 60px;">
+            <section hide flex-margin flex-padding flex layout="row" layout-align="end center">
+                <md-button class="md-flat activeButton " ng-href="/" flex-padding> Home </md-button>
+                <md-button hide class="md-flat" ng-href="/Pictures/"> Pictures </md-button> 
+                <md-button class="md-flat" ng-href="/About/"> About.Me </md-button> 
+            </section>
+            <section hide flex layout="row" layout-align="end center">
+                <md-button class="md-icon-button md-primary md-flat" ng-href="/"> <i class="fi-home" style="height: 100%;"></i> </md-button>
+                <md-button hide class="md-icon-button md-flat" ng-href="/Pictures/"> <i class="fi-camera"></i> </md-button> 
+                <md-button class="md-icon-button md-flat" ng-href="/About/"> <i class="fi-torso"></i> </md-button> 
+            </section>
+          </section>  
+    </md-content>
+
+        </header>
+        
+        <md-content>
+             
+        </md-content>
+       
+        <md-content class="md-padding" style="min-height:  {{windowHeight-100+'px;'}} " flex>
+            
+
+<md-content class="profileContainer" layout="column" layout-gt-sm="row" md-padding layout-align="center center" flex fill style="min-height:  {{windowHeight-150+'px;'}} ;">
+
+    <md-content flex flex-xs="20" flex-sm="20" flex-lg="5" hide-md> </md-content>
+    <md-content flex flex-md="30" flex-lg="20" md-padding layout-align="end center">
+        <img src=/assets/img/profile_4.png alt="Profile Image" style="max-height: 450px;">
+    </md-content>
+    
+    <md-content flex flex-md="70" flex-lg="70" md-padding layout="column" layout-align="start center">
+        <center>
+            <h2 class="subheader"> Hi, I'm Avi. </h2>
+            <h3 class="subheader"> Analyst. Engineer. Designer. Photographer...<br>
+            <strong> Human. </strong></h3>
+            <md-content layout="row" layout-align="center center"> 
+                <md-button ng-href="https://www.facebook.com/avinash.nagarajan.9" class="md-icon-button md-mini md-primary" aria-label="Contact me on Facebook">
+                    <md-tooltip> Facebook </md-tooltip>
+                    <md-icon md-svg-src="/assets/img/icon-facebook.svg"></md-icon>
+                </md-button>
+                <md-button ng-href="https://ca.linkedin.com/pub/avinash-nagarajan/28/802/856" class="md-icon-button md-primary md-mini" aria-label="Contact me on Linkedin">
+                    <md-tooltip> LinkedIn </md-tooltip>
+                    <md-icon md-svg-src="/assets/img/icon-linkedin.svg"></md-icon>
+                </md-button>
+                <md-button class="md-icon-button md-primary md-mini" aria-label="Email Me">
+                    <a data-open="emailModal">
+                    <md-tooltip> Email Me! </md-tooltip>
+                    <md-icon md-svg-src="/assets/img/icon-email.svg"></md-icon>
+                    </a>
+                </md-button>
+                <md-button class="md-flat activeButton" ng-href="/About/" flex-padding>
+                    <md-tooltip> Learn more about me </md-tooltip>
+                    About.Me
+                </md-button>
+            </md-content>
+        </center>
+        <!-- <md-fab-speed-dial md-open="fabOpen" md-direction="down" class="md-scale" ng-mouseenter="fabOpen=true" ng-mouseleave="fabOpen=false" ng-init="fabOpen=false">
+        <md-fab-trigger>
+          <md-button aria-label="contact" class="md-icon-button">
+              <md-icon md-svg-src="/assets/img/icon-contact.svg" style="height: 48px; width: 48px;"></md-icon>
+          </md-button>
+            <md-tooltip md-direction="top"> Get in touch! </md-tooltip>
+        </md-fab-trigger>
+        <md-fab-actions>
+
+            <md-button ng-href="https://www.facebook.com/avinash.nagarajan.9" class="md-icon-button md-mini" aria-label="facebook">
+                <md-tooltip> Facebook </md-tooltip>
+                <md-icon md-svg-src="/assets/img/icon-facebook.svg"></md-icon>
+            </md-button>
+
+            <md-button ng-href="https://ca.linkedin.com/pub/avinash-nagarajan/28/802/856" class="md-icon-button md-mini" aria-label="linkedin">
+                <md-tooltip> LinkedIn </md-tooltip>
+                <md-icon md-svg-src="/assets/img/icon-linkedin.svg"></md-icon>
+            </md-button>
+          
+            <md-button class="md-icon-button md-mini" aria-label="Email Me">
+                <a data-open="emailModal">
+                <md-tooltip> Email Me! </md-tooltip>
+                <md-icon md-svg-src="/assets/img/icon-email.svg"></md-icon>
+                </a>
+            </md-button>
+
+        </md-fab-actions>
+</md-fab-speed-dial> -->
+            <div class="large reveal" id="emailModal" data-reveal>
+                <h5 class="websiteContent">I know this is a little inconvenient!</h5>
+                <h6 class="websiteContent subheader">But, I am still learning how to deal with the spam that comes from having an email address on a website.... In the meanwhile, please click below to mail me</h6>
+                <a href="http://www.google.com/recaptcha/mailhide/d?k=01dEAvo4XlAaEkY6QcyqMbPA==&amp;c=wOnT3-cGB7KlQkit_ULUxwF33K7swK4axBGCFTdA2Y8=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501dEAvo4XlAaEkY6QcyqMbPA\75\75\46c\75wOnT3-cGB7KlQkit_ULUxwF33K7swK4axBGCFTdA2Y8\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">a...@gmail.com</a>
+                <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+            </div>
+    </md-content>
+    
+    <md-content flex flex-xs="20" flex-sm="20" flex-lg="5" hide-md> </md-content>
+
+</md-content>
+
+
+            
+
+<md-content hide md-padding style="padding: 10px;" flex layout="row" layout-align="space-around center"> 
+    <h4 class="subheader" style="padding: 20px; font-family: Roboto">
+    I am an analyst by profession. I love to travel and am passionate (albeit still a learner) about photography. I have also dabbled in design, application development and computer programming. In the near future, I would like to learn a new language! 
+    </h4>
+</md-content>
+
+            
+            
+            
+            
+        </md-content>
+        
+        <footer>
+            
+    <md-content class="md-whiteframe-z1 footer" flex layout="row" layout-align = "space-around center">
+    <span class="footerText" align="center"> <Strong>Stay hungry. Stay foolish. <br></Strong>
+(c) Avinash Nagarajan, All Rights Reserved.
+<br> I use this domain to learn new technologies and test out different components and structures.... A thought crossed your mind? I would love to know!
+<br> Designed using elements from the <a href="http://foundation.zurb.com/">foundation framework</a>, <a href="https://angularjs.org/">AngularJS</a> and <a href="https://material.angularjs.org/">AngularMaterial</a>.
+</span>
+</md-content>
+
+        </footer>    
+        
+        
+    <script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/modernizr.js"></script>
+<script src="/assets/js/webcomponents-lite.js"></script>
+<script src="/assets/js/foundation.js"></script>
+
+<script>
+$(document).foundation();
+</script>
+
+<!-- Adding script to change menu size automatically -->
+<!--
+<script type="text/javascript">
+    $(window).on("scroll", function(){
+        if($(document).scrollTop()>100){
+            $("#mainHeader").removeClass("mainHeaderRowLarge").addClass("mainHeaderRowRegular");
+        } else{
+            $("#mainHeader").removeClass("mainHeaderRowRegular").addClass("mainHeaderRowLarge");
+        }
+    });
+</script>
+-->
+
+<script>
+function initialScroll(hScroll, vScroll) {
+    window.scrollTo(hScroll, vScroll);
+}
+    
+function focusOnElement(element_id) {
+     $(element_id).goTo(); // need to 'go to' this element
+}
+</script>
+
+<script src="/assets/js/angular.js"></script>
+<script src="/assets/js/angular-aria.js"></script>
+<script src="/assets/js/angular-animate.js"></script>
+<script src="/assets/js/angular-material.js"></script>
+<script src="/assets/js/angular-scroll.js"></script>
+<script src="/assets/js/angular-route.js"></script>
+<script src="/assets/js/angular-scroll-animate.js"></script>
+
+<script src="/assets/js/masonry.pkgd.js"></script>
+<script src="/assets/js/imagesloaded.js"></script>
+<script src="/assets/js/jquery.bridget.js"></script>
+<script src="/assets/js/angular-masonry.js"></script>
+<script src="/assets/js/Modules.js"></script>
+<script src="/assets/js/bodymovin.js"></script>
+<script src="/assets/js/react.development.js"></script>
+<script src="/assets/js/react-dom.development.js"></script>
+<script src="/assets/js/imagesloaded.js"></script>
+
+<!-- <script src="/assets/js/bodymotion-animations.js"></script> -->
+
+
+	</body>
+    
+</html>
