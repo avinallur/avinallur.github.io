@@ -57,7 +57,7 @@
     
     <md-content flex flex-md="70" flex-lg="70" md-padding layout="column" layout-align="start center">
         <center>
-            <h2 id = "intro-text" class="subheader"> Hi, I'm Avi. </h2>
+            <h2 id = "intro-text" class="subheader"></h2>
             <h3 class="subheader"> Analyst. Engineer. Designer. Photographer...<br>
             <strong> Human. </strong></h3>
             <md-content layout="row" layout-align="center center"> 
@@ -184,8 +184,10 @@ function focusOnElement(element_id) {
 
 <script>
   $('#intro-text').typeIt({
-    //strings: ['Enter your string here!', 'Another string!']
-  });
+    lifeLike: true,
+    autoStart: false
+  })
+  .tiType('Hi. I\'m Avi.');
 </script>
 
 <script src="/assets/js/angular.js"></script>
